@@ -1,0 +1,13 @@
+services:
+  cyberchef:
+    image: mpepping/cyberchef
+    ports:
+      - 127.0.0.1:8000:8000                 # Bind nginx locally
+    environment:
+      - HTTP_PROXY="http://proxy-prod.example.com:8080"
+      - HTTPS_PROXY="http://proxy-prod.example.com:8080"
+      - NO_PROXY="localhost, 127.0.0.1/8,"
+      - SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt"
+      - CURL_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"
+      - REQUESTS_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"
+      - AWS_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"

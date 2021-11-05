@@ -8,7 +8,10 @@ GCHQ [CyberChef](https://github.com/gchq/CyberChef/) in a container. CyberChef i
 ## Run
 
 ```bash
-docker run -d -p 8000:8000 mpepping/cyberchef
+# run the solution and tail logs
+docker-compose -f docker-compose up
+# run the solution detached
+docker-compose -f docker-compose up -d
 ```
 
 A listing of all available version tags can be found on the [Docker Hub](https://hub.docker.com/r/mpepping/cyberchef/tags) page.
@@ -21,4 +24,5 @@ A listing of all available version tags can be found on the [Docker Hub](https:/
 
 ## Contributors
 
-Thanks to @tabic and @ilyaglow for their contributions. 
+Thanks to @tabic and @ilyaglow for their contributions.
+Thanks @mpepping for the base docker project, that I adapted
