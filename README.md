@@ -9,9 +9,9 @@ GCHQ [CyberChef](https://github.com/gchq/CyberChef/) in a container. CyberChef i
 
 ```bash
 # run the solution and tail logs
-docker-compose -f docker-compose up
+docker-compose -f docker-compose.yml up
 # run the solution detached
-docker-compose -f docker-compose up -d
+docker-compose -f docker-compose.yml up -d
 ```
 
 A listing of all available version tags can be found on the [Docker Hub](https://hub.docker.com/r/mpepping/cyberchef/tags) page.
